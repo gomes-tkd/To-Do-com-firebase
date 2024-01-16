@@ -1,0 +1,14 @@
+.gridAddTarefa {
+    display: grid;
+    width: 800px;
+    border: 1px solid #F6F7F9;
+    border-radius: 5px;
+    background: #23272F;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.addTarefaBtn {
+    margin: 0 auto;
+    padding: 1rem;
+}

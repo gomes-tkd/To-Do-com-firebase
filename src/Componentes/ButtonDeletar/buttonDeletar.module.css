@@ -1,0 +1,16 @@
+.btn {
+    padding: 0.675rem 1rem;
+    background: #dc143c;
+    justify-self: end;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid transparent;
+}
+
+
+.btn:hover {
+    border: 1px solid #fff;
+}
