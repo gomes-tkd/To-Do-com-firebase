@@ -1,0 +1,44 @@
+.pesquisaFlex input[type="text"] {
+    width: 200px;
+}
+
+.pesquisaDiv {
+    display: grid;
+}
+
+.pesquisaFlex {
+    display: flex;
+    margin: 10px;
+    width: 750px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (width: 1024px) {
+    .pesquisaDiv {
+        margin: 10px;
+    }
+
+    .pesquisaFlex {
+        display: grid;
+        padding: 1rem;
+    }
+
+    .pesquisaFlex input[type="text"] {
+        padding: 0.325rem 0.465rem;
+        border-radius: 5px;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 10px;
+        width: 600px;
+    }
+
+    .pesquisaTitulo, .pesquisaConteudo {
+        display: grid;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .pesquisaTitulo label, .pesquisaConteudo label {
+        margin-bottom: 10px;
+    }
+}

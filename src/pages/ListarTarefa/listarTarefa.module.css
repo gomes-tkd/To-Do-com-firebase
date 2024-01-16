@@ -1,0 +1,15 @@
+.gridLista {
+    display: grid;
+    width: 800px;
+    border: 1px solid #F6F7F9;
+    border-radius: 5px;
+    background: #23272F;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.listaDone {
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+}

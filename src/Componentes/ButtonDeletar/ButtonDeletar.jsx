@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from "./buttonCancelarDeletar.module.css";
+import styles from "./buttonDeletar.module.css";
 
-const ButtonCancelarDeletar = ({ texto, ...props}) => {
+const ButtonDeletar = ({ texto, ...props}) => {
     return (
         <button className={styles.btn} {...props}>
             {texto}
@@ -9,4 +9,4 @@ const ButtonCancelarDeletar = ({ texto, ...props}) => {
     );
 };
 
-export default ButtonCancelarDeletar;
+export default ButtonDeletar;

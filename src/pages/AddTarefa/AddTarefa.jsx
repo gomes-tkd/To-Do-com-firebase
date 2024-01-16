@@ -1,25 +1,24 @@
 import React from 'react';
-import ConteudoTarefa from "../Componentes/Conteudo/ConteudoTarefa";
-import Input from "../Componentes/Input/Input";
-import Button from "../Componentes/Button/Button";
-import { addDoc  } from "firebase/firestore";
-import { db } from "../Firebase";
-import {Tarefa} from "../Model/Tarefa";
+import ConteudoTarefa from "../../Componentes/Conteudo/ConteudoTarefa";
+import Input from "../../Componentes/Input/Input";
+import Button from "../../Componentes/Button/Button";
 import styles from "./addTarefa.module.css";
+import {adicionarTarefas, getListaTarefas} from "../../Firebase";
 
-const AddTarefa = () => {
+const AddTarefa = ({ setLista }) => {
     const [titulo, setTitulo] = React.useState("");
     const [conteudo, setConteudo] = React.useState("");
-
-    const addTask = async () => {
-        const tarefa = new Tarefa(titulo, conteudo);
-        addDoc(db, tarefa.criarNovaTarefa());
-    }
 
     const limparTarefa = () => {
         setTitulo("");
         setConteudo("");
     }
+
+    // const addTask = async () => {
+    //     await adicionarTarefas(titulo, conteudo);
+    //     await getListaTarefas(setLista);
+    //     limparTarefa();
+    // }
 
     return (
         <form
@@ -37,7 +36,11 @@ const AddTarefa = () => {
                 label={"Conteúdo"}
             />
             <div className={styles.addTarefaBtn}>
-                <Button texto={"Adicionar"} onClick={addTask} />
+                <Button texto={"Adicionar"} onClick={async () => {
+                    await adicionarTarefas(titulo, conteudo);
+                    await getListaTarefas(setLista);
+                    limparTarefa();
+                }} />
                 <Button texto={"Limpar"} onClick={limparTarefa} />
             </div>
         </form>

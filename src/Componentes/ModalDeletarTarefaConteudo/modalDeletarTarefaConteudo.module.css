@@ -1,0 +1,19 @@
+.gridModalDeletarTarefa {
+    width: 400px;
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: #1A1D23;
+    border-radius: 5px;
+    justify-self: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btnDiv {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

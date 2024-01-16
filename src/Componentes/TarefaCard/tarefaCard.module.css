@@ -1,0 +1,87 @@
+.tarefaContainer {
+    margin: 10px;
+    padding: 1rem;
+    background: #16181D;
+    border-radius: 5px;
+    list-style: none;
+    display: grid;
+}
+
+.tarefaTitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.divConcluido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.tarefaConteudo {
+    font-size: 1rem;
+    margin: 5px 0;
+    background: #1A1D23;
+    padding: 0.675rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.tarefaData {
+    font-size: 0.675rem;
+    margin: 8px 0;
+}
+
+.divBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.btnEditar {
+    color: #F6F7F9;
+    background: #23272F;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnDeletar {
+    padding: 0.675rem 1rem;
+    background: #dc143c;
+    justify-self: end;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    border: 1px solid transparent;
+}
+
+.btnEditar:hover,
+.btnDeletar:hover {
+    border: 1px solid #fff;
+}
+
+@media (width: 1024px) {
+    .divBtn {
+        width: 250px;
+    }
+
+    .tarefaTitulo h3{
+        font-size: 1.8rem;
+    }
+
+    .tarefaConteudo {
+        font-size: 1.5rem;
+    }
+
+    .tarefaData {
+        font-size: 0.875rem;
+    }
+}

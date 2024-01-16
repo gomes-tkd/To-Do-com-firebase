@@ -1,0 +1,8 @@
+.labelConcluido {
+    align-items: center;
+    display: flex;
+}
+
+.inputConcluido {
+    margin-left: 10px;
+}
